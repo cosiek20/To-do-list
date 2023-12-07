@@ -1,0 +1,37 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+
+.container {
+  background-color: #292e39;
+}
+
+.NavBar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link {
+  padding: ($base-size * 2) 0;
+  text-align: center;
+  font-size: ($base-size * 1.2);
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+
+.HomeIcon::before {
+  color: white;
+  font-size: 25px;
+}
