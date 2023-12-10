@@ -18,6 +18,16 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+
+    a{
+      padding: ($base-size * 2) 0;
+      text-align: center;
+      font-size: ($base-size * 1.2);
+      font-style: italic;
+      font-weight: normal;
+      text-decoration: none;
+      color: white;
+    }
 }
 
 .link {
@@ -34,4 +44,8 @@
 .HomeIcon::before {
   color: white;
   font-size: 25px;
+}
+
+.linkActive {
+  color: $color-warning !important;
 }

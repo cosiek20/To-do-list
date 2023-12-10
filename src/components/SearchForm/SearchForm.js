@@ -4,11 +4,16 @@ import Button from '../Button/Button';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { searchCard } from '../../redux/store';
+import { useEffect } from 'react';
 
 const SearchForm = () => {
 
     const dispatch  = useDispatch();
     const [input, setInput] = useState('');
+
+    useEffect(() => {
+        dispatch(searchCard(''));
+    }, []);
 
     const handleSubmit = e => {
         e.preventDefault();
