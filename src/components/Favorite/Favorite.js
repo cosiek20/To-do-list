@@ -7,7 +7,9 @@ import { getFavoriteCards } from '../../redux/cardsReducer';
 const Favorite = () => {
 
   const cards = useSelector(state => getFavoriteCards(state))
+  
 
+  if(!cards.length == 1) return <div>  <PageTitle>Favorite</PageTitle><p className={styles.paragraph}>No cards to show...</p></div>
   return (
     <div>
       <div>
