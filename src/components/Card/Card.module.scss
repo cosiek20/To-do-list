@@ -10,4 +10,18 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+
+    button{ 
+        border: none;
+        background-color: $color-light;
+        cursor: pointer;
+    }
+}
+
+.icon {
+    color: $color-dark;
+}
+
+.favoriteIcon {
+    color: $color-warning;
 }
