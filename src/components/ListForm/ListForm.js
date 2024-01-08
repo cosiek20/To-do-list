@@ -23,7 +23,7 @@ const ListForm = () => {
         <form className={styles.listForm} onSubmit={handleSubmit}>
             <label className={styles.label}>Title:</label>
             <TextInput value={title} onChange={e => setTitle(e.target.value)} />
-            <label className={styles.label}>Icon:</label>
+            <label className={styles.label}>Description:</label>
             <TextInput value={description} onChange={e => setDesciption(e.target.value)} />
             <Button>Add column</Button>
         </form>
